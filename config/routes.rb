@@ -1,4 +1,8 @@
 Music::Application.routes.draw do
+  root :to => 'artists#index'
+  
+  resources :albums
+
   resources :artists
 
   resources :songs

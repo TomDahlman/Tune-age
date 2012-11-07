@@ -7,8 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<nav>
+	    <%= link_to "Home", root_url %> |
+	    <%= link_to "Artist", artists_url %> |
+	    <%= link_to "Albums", albums_url %> |
+	    <%= link_to "Songs", songs_url %>
+	  </nav>
 
-<%= yield %>
+	  <%= yield %>
 
 </body>
 </html>

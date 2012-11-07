@@ -6,8 +6,8 @@
 </p>
 <p>
 	<ul>
-	<% Artist.songs.each do |song| %>
-		<li><%= song.title %></li>
+		<% @artist.songs.each do |song| %>
+		<li><%= song.title %> (<%= song.album.name %>)</li>
 	<% end %>
 </p>
 

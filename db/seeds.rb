@@ -21,13 +21,13 @@ o = Album.create(:name => "Dookie")
 p = Album.create(:name => "Take 6")
 q = Album.create(:name => "King of America")
 
-Song.create(:title => "Alison", :director_id => a.id, :album_id => m.id)
-Song.create(:title => "Blame it on Cain", :director_id => a.id, :album_id => m.id)
-Song.create(:title => "I still believe", :director_id => b.id, :album_id => n.id)
-Song.create(:title => "Everywhere I go", :director_id => b.id, :album_id => n.id)
-Song.create(:title => "Basketcase", :director_id => c.id, :album_id => o.id)
-Song.create(:title => "Gold Mine", :director_id => d.id, :album_id => m.id)
-Song.create(:title => "Poison Rose", :director_id => a.id, :album_id => q.id)
+Song.create(:title => "Alison", :artist_id => a.id, :album_id => m.id)
+Song.create(:title => "Blame it on Cain", :artist_id => a.id, :album_id => m.id)
+Song.create(:title => "I still believe", :artist_id => b.id, :album_id => n.id)
+Song.create(:title => "Everywhere I go", :artist_id => b.id, :album_id => n.id)
+Song.create(:title => "Basketcase", :artist_id => c.id, :album_id => o.id)
+Song.create(:title => "Gold Mine", :artist_id => d.id, :album_id => p.id)
+Song.create(:title => "Poison Rose", :artist_id => a.id, :album_id => q.id)
 
 puts "Creating #{Artist.count} entries in the Artist's table."
 puts "and . . ."
